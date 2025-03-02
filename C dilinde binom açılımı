@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int faktoriyel(int n){
+	if(n==0){
+		return 1;
+	}
+	else if (n>=1)
+	{
+		return n* faktoriyel(n-1);
+	}
+	
+};
+
+void binom(int a,int b){
+	int sonuc;
+	int m,x,y;
+	m= faktoriyel(a)/faktoriyel(b)*faktoriyel(a-b);
+	sonuc= m* (x)^(a-b)* (y)^b;
+	printf("sonuc %d*x^(%d)*y^%d",m,(a-b),b);
+
+
+}
+int main(int argc, char *argv[]) {
+int k,l;
+printf("1. sayiyi giriniz:");
+scanf("%d",&k);
+printf("2. sayiyi giriniz:");
+scanf("%d",&l);
+binom(k,l);
+ 
+
+
+
+	
+	
+	
+	return 0;
+}
