@@ -10,7 +10,7 @@ int faktoriyel(int n){
 		return n* faktoriyel(n-1);
 	}
 	
-};
+}
 
 void binom(int a,int b){
 	int sonuc;
